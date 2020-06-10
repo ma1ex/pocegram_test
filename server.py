@@ -84,7 +84,7 @@ def status():
     }
 
 
-@app.route('/send_message/')
+@app.route('/send_message/', methods=['POST'])
 def send_message():
     username = request.json['username']
     password = request.json['password']
